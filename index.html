@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <input type="submit" class="navbarelement loginandsignup" value="Login/Sing up">
-        <div class="welcome">Good Morning! Have a great day.</div>
+
+    <nav id="nav" class="nav-bar">
+        <div class="nav-firsthalf">
+            <p>Home</p>
+            <p>Pending</p>
+            <p>Completed</p>
+            <p>About Us</p>
+        </div>
+        <div class="nav-secondhalf">
+            <p>login / Sign-Up</p>
+        </div>
     </nav>
-
-    <div class="mainlist">
-        <div class="mylist welcome">MY TODO</div>
-        <section id="Todo-Space" class="todospace">
     
-        </section>
-    </div>
+    <main>
+    <section id="Todo-Space" class="todospace">
 
-    <div class="deleteandadd">
-        <div class="add boxdeleteadd">Add Task</div>
-        <div class="delete boxdeleteadd">Delete</div>
-    </div>
+    </section>
 
+    <div class="btn-selector">
+        <button id="add" class="todo-button btn-1">Add To-Do</button>
+        <button id="delete" class="todo-button btn-2">Delete To-Do</button>
+    </div>
+    </main>
     <script src="script.js"></script>
 
 </body>
