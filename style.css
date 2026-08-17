@@ -3,21 +3,66 @@
     padding: 0;
 }
 :root{
-    --todospace-background:rgba(166, 56, 16, 0.993);
+    --todospace-background:white;
     /* --todospace-border */
-    --border-Shadow_effect: rgba(249, 0, 0, 0.921);
+    --border-Shadow_effect: rgba(133, 124, 124, 0.921);
+    --navelement: rgb(144, 46, 201);
+    --font-color-of-nevbar: black;
+    --shadow-effect: 0px 8px 32px 0px var(--border-Shadow_effect);
 }
 body{
     width: 100vw;
     height: 100vh;
+    /* background-color: black; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+.navbar{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row-reverse;
 }
+
+.navbarelement{
+    width: 115px;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    color: var(--font-color-of-nevbar);
+    background-color: var(--navelement);
+    margin: 10px 10px 0 px;
+    position:absolute;
+    right: 10px;
+    
+}
+.welcome{
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mainlist{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+    
+}
+
+.mylist{
+    margin: 0;
+}
+
 .todospace{
     color: white;
-    width: 75%;
-    height: 60%;
+    width: 950px;
+    height: 420px;
     border-radius: 15px;
     background: var(--todospace-background);
     backdrop-filter: blur(100px);
@@ -26,3 +71,21 @@ body{
     box-shadow: 0px 8px 32px 0px var(--border-Shadow_effect);
 }
 
+.deleteandadd{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxdeleteadd{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 33px;
+    box-shadow: var(--shadow-effect);
+    font-size: 20px;
+}
