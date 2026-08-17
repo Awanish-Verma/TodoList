@@ -16,32 +16,18 @@
 }
 .loutercircle{
     width: 45%;
-    height: 95%;
+    aspect-ratio: 1/1;
     background-color: #dfff;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 8px 32px 0px var(--border-Shadow_effect);
-}
-.ldisplaylogin{
-    font-size: 20px;
-    font-weight: bold;
-    width: 100px;
-    height: 40px;
-    background-color: var(--todospace-background);
-    box-shadow: inset 0 0 10px var(--border-Shadow_effect);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    margin-top: 10%;
-    
+    box-shadow:  0px 8px 32px 0px var(--border-Shadow_effect);
 }
 .linnercircle{
     position: relative;
     width: 90%;
-    height: 90%;
+    aspect-ratio: 1/1;
     background-color: #fff;
     border-radius: 100%;
     box-shadow: 0px 8px 32px 0px var(--border-Shadow_effect);
@@ -50,10 +36,27 @@
     align-items: center;
     flex-direction: column;
 }
+.ldisplaylogin{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--todospace-background);
+    text-shadow: 0 0 10px var(--border-Shadow_effect);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 10%;
+    
+}
+.lloginstatement{
+    margin: 0;
+    color: rgb(70, 68, 68);
+}
+
 .lloginform{
     font-size: 18px;
-    width: 60%;
-    height: 70%;
+    width: 70%;
+    aspect-ratio: 1/1;
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -62,16 +65,65 @@
     /* background-color: blueviolet; */
     
 }
+.linputboxs{
+    width: 90%;
+    height: 60%;
+    margin: 9% 0 0 0;
+    font-size: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px var(--border-Shadow_effect);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input:focus{
+    outline: none;
+}
 #name, #passwordd{
     /* border: none; */
     width: 90%;
-    height: 10%;
-    margin: 10% 0 0 0;
-    font-size: 16px;
+    height: 90%;
+    /* margin: 9% 0 0 0; */
+    font-size: 100%;
     border: none;
-    border-radius: 15px;
-    box-shadow: inset 0 0 10px gray;
+    border-radius: 10px;
+    background-color: transparent;
+    /* box-shadow: inset 0 0 10px var(--border-Shadow_effect); */
 }
-#passwordd{
-    margin: 4% 0 0 0;
+
+a{
+    text-decoration: none;
+    margin: 0;
+}
+
+.lforgot{
+    margin: 3% 30px 0 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    /* poition: absolute; */
+    /* right: 10px; */
+    
+}
+#submitt{
+    width: 90%;
+    height: 55%;
+    margin: 8% 0 0 0;
+    font-size: 90%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px var(--border-Shadow_effect);
+    color: rgb(70, 68, 68);
+}
+
+.lsignupinlogin{
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lasignup{
+    color: red;
 }
