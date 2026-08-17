@@ -1,6 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     background: linear-gradient(135deg, #5c0067 0%, #ff5e62 100%);
     /* filter: blur(5px); */
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
