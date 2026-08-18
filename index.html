@@ -37,43 +37,82 @@
     <!-- do not touch this this is login page popup it always in last ki the body -->
     
     <div class="blurpage" id="loginPopup">
-    <div class="loutercircle">
-        <div class="linnercircle">
-            
-            <button class="close-login" id="closeLogin">✕</button>
-            <p class="ldisplaylogin">Login</p>
-            <p class="lloginstatement">Sign in to your account</p>
+        <div class="loutercircle">
+            <div class="linnercircle">
+                
+                <button class="close-login" id="closeLogin">✕</button>
+                <p class="ldisplaylogin">Login</p>
+                <p class="lloginstatement">Sign in to your account</p>
 
-            <form action="" class="lloginform">
+                <form action="" class="lloginform">
 
-                <div class="linputboxs">
-                    <input type="text" id="name" placeholder="Username">
-                </div>
+                    <div class="linputboxs">
+                        <input type="text"class="gernal" id="lname" placeholder="Username">
+                    </div>
 
-                <br>
+                    <br>
 
-                <div class="linputboxs">
-                    <input type="password" id="passwordd" placeholder="Password">
-                </div>
+                    <div class="linputboxs">
+                        <input type="password" class="gernal" id="lpasswordd" placeholder="Password">
+                    </div>
 
-                <a href="" class="lforgot">
-                    <p class="lloginstatement">Forgot password?</p>
-                </a>
+                    <a href="" class="lforgot">
+                        <p class="lloginstatement">Forgot password?</p>
+                    </a>
 
-                <input type="submit" id="submitt" value="SIGN IN">
+                    <input type="submit" id="submitt" value="SIGN IN">
 
-                <div class="lsignupinlogin">
-                    <p class="lloginstatement">
-                        Don't have an account?
-                        <a href="" class="lasignup">Sign up</a>
-                    </p>
-                </div>
+                    <div class="lsignupinlogin">
+                        <p class="lloginstatement">
+                            Don't have an account?
+                            <span class="lasignup">Sign up</span>
+                        </p>
+                    </div>
 
-            </form>
+                </form>
 
+            </div>
         </div>
     </div>
-</div>
+    
+    <!-- Sign up page -->
+    
+    
+    <div class="sblurpage" id="sloginPopup">
+        <div class="loutercircle">
+            <div class="linnercircle">
+                <button class="close-login" id="closesignup">✕</button>
+                <p class="sdisplaylogin">Sign Up</p>
+                <p class="sloginstatement">create your account</p>
+                <form action="" class="lloginform">
+                    <div class="sinputboxs">
+                        <input type="text" class="gernal" id="sname" placeholder="Full name">
+                    </div>
+                    <br>
+                    <div class="sinputboxs">
+                        <input type="email" class="gernal" id="email" placeholder="Email">
+                    </div>
+                    <br>
+                    <div class="sinputboxs">
+                        <input type="password" class="gernal" id="spasswordd" placeholder="Password">
+                    </div>
+                    <br>
+                    <div class="sinputboxs">
+                        <input type="password" class="gernal" id="scpasswordd" placeholder="Conform Password">
+                    </div>
+                    
+                    <input type="submit" id="ssubmitt" value="CREATE ACCOUNT">
+                    
+                    <div class="lsignupinlogin">
+                        <p class="lsloginstatement">Already have an account? <span class="sasignup">Login</span></p>
+                        
+                    </div>
+                </form>
+                
+                
+            </div>
+        </div> 
+    </div>
 
     <script src="script.js"></script>
 

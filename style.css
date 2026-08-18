@@ -131,7 +131,7 @@ body{
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(6px);
     position: fixed;
-    z-index: 2;
+    z-index: 20;
 }
 
 .blurpage.show {
@@ -215,7 +215,7 @@ body{
 input:focus{
     outline: none;
 }
-#name, #passwordd{
+.gernal{
     /* border: none; */
     width: 90%;
     height: 90%;
@@ -262,4 +262,69 @@ a{
 
 .lasignup{
     color: red;
+    cursor: pointer;
+}
+
+
+/* Sign up css */
+
+
+.sblurpage {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    z-index: 10;
+}
+
+.sblurpage.sshow {
+    display: flex;
+}
+
+.sinputboxs{
+    width: 90%;
+    height: 11%;
+    margin: 0% 0 0 0;
+    font-size: 100%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px var(--border-Shadow_effect);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ssubmitt{
+    width: 90%;
+    height: 10%;
+    margin: 8% 0 0 0;
+    font-size: 90%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px var(--border-Shadow_effect);
+    color: rgb(70, 68, 68);
+    cursor: pointer;
+}
+.sdisplaylogin{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: var(--todospace-background);
+    text-shadow: 0 0 10px var(--border-Shadow_effect);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 8%;
+        
+}
+.sloginstatement{
+    margin: 2% 0 4% 0;
+    color: rgb(70, 68, 68);
+}
+.sasignup{
+    color: red;
+    cursor: pointer;
 }
